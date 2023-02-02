@@ -1,7 +1,11 @@
 import ProfileLogo from '../../assets/images/Rectangle 12.png';
 import TogglerMenuIcon from '../../assets/images/icons8-menu-rounded-50.png';
 
-const ProfileHeader = () => {
+const ProfileHeader = ({ setIsOpen }) => {
+  const handleClick = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <div className="profile-header">
       <div className="icon">
