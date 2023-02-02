@@ -6,11 +6,17 @@ import './index.scss';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [light, setLight] = useState(true);
+
+  const theme = {
+    background: light ? '#fff' : '#000',
+    color: light ? '#000' : '#fff',
+  };
 
   return (
-    <div className="container">
+    <div className="container" style={theme}>
       <Sidebar />
-      <Profile setIsOpen={setIsOpen} />
+      <Profile setIsOpen={setIsOpen} setLight={setLight} />
       {isOpen && <Modal setIsOpen={setIsOpen} />}
     </div>
   );
