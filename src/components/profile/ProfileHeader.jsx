@@ -4,7 +4,7 @@ import TogglerMenuIcon from '../../assets/images/icons8-menu-rounded-50.png';
 import Light from '../../assets/images/light.png';
 import Dark from '../../assets/images/dark.png';
 
-const ProfileHeader = ({ setIsOpen }) => {
+const ProfileHeader = ({ setIsOpen, setLight }) => {
   const [dark, setDark] = useState(false);
 
   const handleClick = () => {
