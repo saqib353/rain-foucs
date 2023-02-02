@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.sidebar {
+  display: flex;
+}
+
+@media screen and (max-width: $lg) {
+  .sidebar {
+    background-color: rebeccapurple;
+    display: none;
+  }
+}

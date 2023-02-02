@@ -1,0 +1,37 @@
+@import './variables.scss';
+.sub-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 4px 12px 12px 48px;
+  color: $menu-icon-bgColor;
+  gap: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.empty {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.menu-toggler-and-edit-btn {
+  display: flex;
+  gap: 1.6rem;
+
+  & img {
+    display: none;
+    height: 35px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .menu-toggler-and-edit-btn {
+    & img {
+      display: block;
+    }
+  }
+}

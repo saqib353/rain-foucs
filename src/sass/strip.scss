@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 8px 12px 8px;
+
+  .upper-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .icon-dot {
+      color: $dots-color;
+      position: relative;
+      height: 32px;
+      width: 32px;
+
+      .dot {
+        height: 3.65px;
+        width: 3.65px;
+        border-radius: 50%;
+        background-color: $dots-color;
+        position: absolute;
+      }
+
+      .letter {
+        position: absolute;
+      }
+
+      .r-letter {
+        top: 15px;
+      }
+
+      .f-letter {
+        left: 9.18px;
+        top: 14.46px;
+      }
+
+      .first-dot {
+        left: 64.01%;
+        top: 4.17%;
+      }
+
+      .second-dot {
+        left: 87.98%;
+        top: 27.36%;
+      }
+
+      .third-dot {
+        left: 69.28%;
+        right: 19.27%;
+        top: 45.46%;
+        bottom: 43.46%;
+      }
+    }
+  }
+
+  .text-initials {
+    display: grid;
+    place-items: center;
+    background-color: $text-initials-color;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+}

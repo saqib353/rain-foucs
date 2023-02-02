@@ -1,0 +1,74 @@
+@import './variables.scss';
+
+.menu {
+  border-left: 1px solid $menu-border-color;
+  padding: 12px 7.5px;
+  width: 100%;
+
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+  }
+
+  .subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    padding-bottom: 0.7rem;
+  }
+
+  .search-input {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: $search-input-bgColor;
+    padding: 4px;
+    border-radius: 4px;
+    width: 100%;
+
+    & input {
+      border: none;
+      outline: none;
+      padding: 0.2rem;
+      background-color: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.1rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: $menu-icon-bgColor;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background-color: $menu-icon-bgColor;
+    }
+
+    .active {
+      background-color: #5c00dc14;
+      color: $btn-icon-active-class-color;
+      & > .menu-icon {
+        background-color: $btn-icon-active-class-color;
+      }
+    }
+  }
+}
